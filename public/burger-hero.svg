@@ -1,0 +1,83 @@
+<svg width="480" height="420" viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="topBunGrad" cx="45%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="60%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </radialGradient>
+    <radialGradient id="bottomBunGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </radialGradient>
+    <radialGradient id="pattyGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#A3522A"/>
+      <stop offset="100%" stop-color="#5C2E0E"/>
+    </radialGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+    <filter id="glowAmber">
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="rgba(245,158,11,0.45)"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="240" cy="408" rx="160" ry="14" fill="rgba(0,0,0,0.45)"/>
+
+  <!-- ── BOTTOM BUN ── -->
+  <ellipse cx="240" cy="362" rx="168" ry="42" fill="url(#bottomBunGrad)" filter="url(#dropShadow)"/>
+  <ellipse cx="240" cy="338" rx="162" ry="20" fill="#D97706"/>
+  <!-- shine -->
+  <ellipse cx="220" cy="332" rx="60" ry="8" fill="rgba(255,255,255,0.12)"/>
+
+  <!-- ── MEAT PATTY (lower) ── -->
+  <ellipse cx="240" cy="312" rx="156" ry="22" fill="url(#pattyGrad)" filter="url(#softShadow)"/>
+  <ellipse cx="240" cy="302" rx="152" ry="14" fill="#92400E"/>
+
+  <!-- ── CHEESE ── -->
+  <ellipse cx="240" cy="286" rx="164" ry="16" fill="#FBBF24" filter="url(#softShadow)"/>
+  <!-- cheese drip left -->
+  <path d="M76,286 Q68,298 74,308 Q80,295 82,286Z" fill="#FBBF24"/>
+  <!-- cheese drip right -->
+  <path d="M404,286 Q412,298 406,308 Q400,295 398,286Z" fill="#FBBF24"/>
+
+  <!-- ── LETTUCE ── -->
+  <path d="M54,278 Q72,256 88,272 Q104,254 118,270 Q134,252 150,268 Q166,250 182,267 Q198,250 214,266 Q230,250 246,266 Q262,250 278,267 Q294,252 310,270 Q326,254 342,272 Q358,256 376,278 L376,294 Q358,276 342,288 Q326,274 310,286 Q294,272 278,283 Q262,270 246,282 Q230,270 214,282 Q198,270 182,283 Q166,270 150,284 Q134,272 118,286 Q104,274 88,288 Q72,276 54,294 Z" fill="#16A34A"/>
+  <!-- lettuce highlight -->
+  <path d="M54,278 Q72,256 88,272 Q104,254 118,270 Q134,252 150,268 Q166,250 182,267 Q198,250 214,266 Q230,250 246,266 Q262,250 278,267 Q294,252 310,270 Q326,254 342,272 Q358,256 376,278 L376,282 Q358,260 342,276 Q326,258 310,274 Q294,256 278,271 Q262,254 246,270 Q230,254 214,270 Q198,254 182,271 Q166,254 150,272 Q134,256 118,274 Q104,258 88,276 Q72,260 54,282 Z" fill="#22C55E" opacity="0.5"/>
+
+  <!-- ── TOMATO ── -->
+  <ellipse cx="240" cy="278" rx="148" ry="14" fill="#DC2626"/>
+  <ellipse cx="200" cy="274" rx="36" ry="8" fill="#EF4444" opacity="0.6"/>
+  <ellipse cx="280" cy="274" rx="28" ry="7" fill="#EF4444" opacity="0.6"/>
+
+  <!-- ── ONION / SAUCE ── -->
+  <ellipse cx="240" cy="265" rx="138" ry="11" fill="rgba(254,243,199,0.7)"/>
+
+  <!-- ── MEAT PATTY (upper) ── -->
+  <ellipse cx="240" cy="251" rx="152" ry="22" fill="url(#pattyGrad)" filter="url(#softShadow)"/>
+  <ellipse cx="240" cy="241" rx="148" ry="14" fill="#92400E"/>
+  <!-- grill marks -->
+  <line x1="140" y1="244" x2="180" y2="250" stroke="#5C2E0E" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="241" x2="240" y2="247" stroke="#5C2E0E" stroke-width="3" stroke-linecap="round"/>
+  <line x1="260" y1="241" x2="300" y2="247" stroke="#5C2E0E" stroke-width="3" stroke-linecap="round"/>
+  <line x1="316" y1="244" x2="348" y2="250" stroke="#5C2E0E" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ── TOP BUN ── -->
+  <ellipse cx="240" cy="155" rx="175" ry="105" fill="url(#topBunGrad)" filter="url(#glowAmber)"/>
+  <!-- bun base flat part -->
+  <ellipse cx="240" cy="228" rx="170" ry="22" fill="#D97706"/>
+  <!-- bun highlight -->
+  <ellipse cx="215" cy="105" rx="100" ry="48" fill="rgba(255,255,255,0.13)"/>
+
+  <!-- ── SESAME SEEDS ── -->
+  <ellipse cx="178" cy="88" rx="16" ry="9" fill="rgba(255,251,235,0.88)" transform="rotate(-28 178 88)"/>
+  <ellipse cx="240" cy="68" rx="16" ry="9" fill="rgba(255,251,235,0.88)"/>
+  <ellipse cx="302" cy="88" rx="16" ry="9" fill="rgba(255,251,235,0.88)" transform="rotate(28 302 88)"/>
+  <ellipse cx="196" cy="120" rx="14" ry="8" fill="rgba(255,251,235,0.85)" transform="rotate(14 196 120)"/>
+  <ellipse cx="284" cy="120" rx="14" ry="8" fill="rgba(255,251,235,0.85)" transform="rotate(-14 284 120)"/>
+  <ellipse cx="240" cy="140" rx="13" ry="7" fill="rgba(255,251,235,0.75)"/>
+</svg>
