@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a0000"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+    <linearGradient id="bunTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="bunBot" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="18" fill="url(#bg)"/>
+
+  <!-- Crown -->
+  <polygon points="28,24 28,13 39,19 50,8 61,19 72,13 72,24" fill="#FACC15"/>
+  <rect x="28" y="23" width="44" height="5" rx="2" fill="#D97706"/>
+  <circle cx="50" cy="9" r="3" fill="#FDE68A"/>
+  <circle cx="28" cy="13" r="2.5" fill="#FDE68A"/>
+  <circle cx="72" cy="13" r="2.5" fill="#FDE68A"/>
+
+  <!-- Top bun -->
+  <ellipse cx="50" cy="47" rx="34" ry="16" fill="url(#bunTop)"/>
+  <!-- Sesame seeds -->
+  <ellipse cx="40" cy="40" rx="4" ry="2.2" fill="rgba(255,251,235,0.85)" transform="rotate(-20 40 40)"/>
+  <ellipse cx="50" cy="37" rx="4" ry="2.2" fill="rgba(255,251,235,0.85)"/>
+  <ellipse cx="60" cy="40" rx="4" ry="2.2" fill="rgba(255,251,235,0.85)" transform="rotate(20 60 40)"/>
+
+  <!-- Meat patty -->
+  <ellipse cx="50" cy="58" rx="33" ry="7" fill="#7C2D12"/>
+
+  <!-- Cheese -->
+  <ellipse cx="50" cy="64" rx="35" ry="5" fill="#FBBF24"/>
+
+  <!-- Lettuce -->
+  <ellipse cx="50" cy="69" rx="35" ry="4" fill="#16A34A"/>
+
+  <!-- Bottom bun -->
+  <ellipse cx="50" cy="76" rx="33" ry="10" fill="url(#bunBot)"/>
+
+  <!-- Red glow -->
+  <ellipse cx="50" cy="90" rx="30" ry="6" fill="rgba(225,29,34,0.3)"/>
+</svg>
