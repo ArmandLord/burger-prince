@@ -72,10 +72,18 @@ export function Hero() {
       </div>
 
       {/* ── Tagline ── */}
-      <p className="animate-fade-in delay-600 relative z-10 mb-2 text-center font-body text-sm uppercase tracking-[0.25em] text-bp-gray">
+      <p className="animate-fade-in delay-600 relative z-10 text-center font-body text-sm uppercase tracking-[0.25em] text-bp-gray">
         El sabor que te hace&nbsp;
         <span className="text-bp-gold font-semibold">rey</span>
       </p>
+
+      {/* ── Schedule pill ── */}
+      <div className="animate-fade-in delay-600 relative z-10 mb-2 mt-3 flex items-center gap-2 rounded-full border border-bp-gold/40 bg-bp-gold/10 px-4 py-2">
+        <span className="text-base" aria-hidden="true">🕕</span>
+        <p className="font-body text-xs font-semibold uppercase tracking-widest text-bp-gold">
+          Vie&nbsp;–&nbsp;Dom&nbsp;&nbsp;6:00&nbsp;–&nbsp;10:00 PM
+        </p>
+      </div>
     </section>
   );
 }

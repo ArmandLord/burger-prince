@@ -73,11 +73,11 @@ export function MenuSection() {
       </div>
 
       {/* Promo note */}
-      <div className="mt-8 rounded-xl border border-bp-gold/30 bg-bp-black/60 px-5 py-4 text-center animate-glow-pulse">
+      {/* <div className="mt-8 rounded-xl border border-bp-gold/30 bg-bp-black/60 px-5 py-4 text-center animate-glow-pulse">
         <p className="font-body text-sm text-bp-gray">
           <span className="text-bp-gold font-semibold">✦ Combos</span> incluyen papas medianas y refresco
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }

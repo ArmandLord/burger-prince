@@ -34,7 +34,39 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/10 text-center">
+        {/* Schedule */}
+        <div className="mt-10 rounded-2xl border border-bp-gold/30 bg-bp-dark px-6 py-6 text-center">
+          <p className="font-display text-bp-gold text-xl tracking-widest mb-4">
+            🕕&nbsp; HORARIO DE ATENCIÓN
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
+            {[
+              { day: "Viernes", short: "VIE" },
+              { day: "Sábado",  short: "SÁB" },
+              { day: "Domingo", short: "DOM" },
+            ].map(({ day, short }) => (
+              <div
+                key={day}
+                className="flex flex-col items-center gap-1 rounded-xl border border-bp-red/40 bg-bp-black px-6 py-3 min-w-[110px]"
+              >
+                <span className="font-display text-bp-red text-lg tracking-widest">
+                  {short}
+                </span>
+                <span className="font-body text-white text-sm font-semibold">
+                  {day}
+                </span>
+                <span className="font-body text-bp-gold text-xs font-medium tracking-wide">
+                  6:00 – 10:00 PM
+                </span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 font-body text-xs text-bp-gray">
+            Lunes a jueves: cerrado · Solo fines de semana
+          </p>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-white/10 text-center">
           <p className="font-display text-2xl text-white tracking-widest">
             BURGER <span className="text-bp-red">PRINCE</span>
           </p>
